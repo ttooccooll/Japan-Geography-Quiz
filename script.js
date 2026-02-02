@@ -192,7 +192,7 @@ map.on("click", function (e) {
 
   if (dist < tolerance) {
     L.circle([e.latlng.lat, e.latlng.lng], {
-      radius: 30000,
+      radius: 20000,
       color: "green",
     })
       .addTo(map)
@@ -217,7 +217,7 @@ map.on("click", function (e) {
     messageEl.textContent = `Nope. Try again.`;
 
     const wrongCircle = L.circle([e.latlng.lat, e.latlng.lng], {
-      radius: 30000,
+      radius: 20000,
       color: "red",
       fillColor: "red",
       fillOpacity: 0.6,
