@@ -32,6 +32,12 @@ let locations = [
     type: "City",
   },
   {
+    name: "Kobe",
+    lat: 34.6901,
+    lng: 135.1955,
+    type: "City",
+  },
+  {
     name: "Kyoto",
     lat: 35.0116,
     lng: 135.7681,
@@ -145,6 +151,7 @@ const tolerancePerCountry = {
   Hiroshima: 0.3,
   Sendai: 0.3,
   Nagasaki: 0.3,
+  Kobe: 0.3,
   Honshu: 4,
   Hokkaido: 3,
   Kyushu: 2.5,
