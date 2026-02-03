@@ -369,4 +369,7 @@ function showEndScreen() {
   `;
 
   endScreen.classList.remove("hidden");
-  doc
+  document.getElementById("claimRewardBtn").onclick = () => {
+    window.payForScore(score);
+  };
+}
