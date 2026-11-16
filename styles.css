@@ -36,6 +36,7 @@ button {
   width: 100%;
   height: 100vh;
   height: 100svh;
+  background: #0f1115;
 }
 
 .leaflet-container {
@@ -95,10 +96,6 @@ button {
 .wrong-marker {
   color: var(--red);
   font-weight: bold;
-}
-
-#map img {
-  filter: brightness(3.2) contrast(2) saturate(1.05) hue-rotate(-2deg);
 }
 
 #endScreen {

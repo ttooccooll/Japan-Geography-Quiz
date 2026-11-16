@@ -1,15 +1,19 @@
 var map = L.map("map", {
   zoomControl: false,
+  minZoom: 3,
+  maxZoom: 8,
 });
 
-L.tileLayer(
-  "https://{s}.basemaps.cartocdn.com/rastertiles/dark_nolabels/{z}/{x}/{y}{r}.png",
-  {
-    subdomains: "abcd",
-    maxZoom: 30,
-    attribution: "&copy; OpenStreetMap &copy; CARTO",
+L.geoJSON(borders, {
+  interactive: false,
+  attribution: "Made with Natural Earth",
+  style: {
+    color: "#78909c",
+    weight: 0.8,
+    fillColor: "#263238",
+    fillOpacity: 1,
   },
-).addTo(map);
+}).addTo(map);
 
 var japanBounds = [
   [24.0, 122.0],
